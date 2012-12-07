@@ -1,0 +1,21 @@
+NAME
+    Lingua::Align::LinkSearch - Virtual Perl extension for tree alignment
+    (alignment inference using local classification scores as alignment
+    costs)
+
+SYNOPSIS
+DESCRIPTION
+    Various strategies have been implemented. More information will be added
+    soon ....
+
+SEE ALSO
+AUTHOR
+    Joerg Tiedemann, <jorg.tiedemann@lingfil.uu.se>
+
+COPYRIGHT AND LICENSE
+    Copyright (C) 2009 by Joerg Tiedemann
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself, either Perl version 5.8.8 or, at
+    your option, any later version of Perl 5 you may have available.
+
