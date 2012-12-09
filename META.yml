@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Lingua-Align
-version:            0.02
+version:            0.03
 abstract:           Perl modules for the alignment of parallel corpora
 author:
     - Joerg Tiedemann
@@ -11,8 +11,9 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    IPC::Open3:   0
-    XML::Parser:  0
+    Algorithm::Munkres:  0
+    IPC::Open3:          0
+    XML::Parser:         0
 no_index:
     directory:
         - t

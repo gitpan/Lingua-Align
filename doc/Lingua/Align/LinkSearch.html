@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Lingua::Align::LinkSearch - Search algorithms for tree alignment</title>
+<link rel="stylesheet" href="/~joerg/css/pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_securityagent@gamma.local" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#copyright_and_license">COPYRIGHT AND LICENSE</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>Lingua::Align::LinkSearch - Search algorithms for tree alignment</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+    my $aligner = new Lingua::Align::LinkSearch(-link_search =&gt; $type);
+    $aligner-&gt;search(\%links,\@scores,$min_score,\@src,\@trg)</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Class factory for searching the best tree alignment based on local
+link scores Various strategies have been implemented. Use the argument
+<code>-link_search</code> in the constructor to choose from the following
+search strategies:</p>
+<pre>
+ threshold .............. greedy search with score thresholds
+ assignment ............. bipartite graph matching (assignment problem)
+ greedy ................. greedy search
+ greedyWellformed ....... greedy search with well-formedness constraints
+ greedyFinal ............ add step to link unlinked nodes (if wellformed)
+ greedyFinalAnd ......... add step to link still unlinked nodes
+ src2trg ................ source-to-target alignment (one link / source)
+ trg2src ................ target-to-source alignment (one link / target)
+ src2trgWellFormed ...... src2trg with wellformedness constraints
+ intersection ........... intersection between src2trg and trg2src
+ NTfirst ................ align non-terminals nodes first
+ NTonly ................. align only non-terminals
+ Tonly .................. align only termnal nodes
+ PaCoMT ................. used in PaCoMT project
+ cascaded ............... conbine search strategies (sequentially)</pre>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>Joerg Tiedemann, &lt;<a href="mailto:jorg.tiedemann@lingfil.uu.se">jorg.tiedemann@lingfil.uu.se</a>&gt;</p>
+<p>
+</p>
+<hr />
+<h1><a name="copyright_and_license">COPYRIGHT AND LICENSE</a></h1>
+<p>Copyright (C) 2009 by Joerg Tiedemann</p>
+<p>This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
+at your option, any later version of Perl 5 you may have available.</p>
+
+</body>
+
+</html>

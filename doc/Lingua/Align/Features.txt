@@ -1,19 +1,20 @@
 NAME
-    Lingua::Align::Trees::Features - Perl modules for feature extraction for
-    the Lingua::Align::Trees tree aligner
+    Lingua::Align::Features - Feature extraction for tree alignment
 
 SYNOPSIS
-      use Lingua::Align::Trees::Features;
+      use Lingua::Align::Features;
 
       my $FeatString = 'catpos:treespansim:parent_catpos';
-      my $extractor = new Lingua::Align::Trees::Features(
+      my $extractor = new Lingua::Align::Features(
                               -features => $FeatString);
 
       my %features = $extractor->features(\%srctree,\%trgtree,
                                           $srcnode,$trgnode);
 
+
+
       my $FeatString2 = 'giza:gizae2f:gizaf2e:moses';
-      my $extractor2 = new Lingua::Align::Trees::Features(
+      my $extractor2 = new Lingua::Align::Features(
                           -features => $FeatString2,
                           -lexe2f => 'moses/model/lex.0-0.e2f',
                           -lexf2e => 'moses/model/lex.0-0.f2e',
@@ -128,7 +129,7 @@ DESCRIPTION
 
           # product of tree level similarity score between source parent and
           # current target and Moses score for parent nodes on both sides
-          srcparent_treelevelsim*parent_moses  
+          srcparent_treelevelsim*parent_moses
 
   FEATURES
     The following feature types are implemented in the Tree Aligner:
@@ -401,7 +402,7 @@ SEE ALSO
     information on the tree aligner look at Lingua::Align::Trees
 
 AUTHOR
-    Joerg Tiedemann, <jorg.tiedemann@lingfil.uu.se>
+    Joerg Tiedemann
 
 COPYRIGHT AND LICENSE
     Copyright (C) 2009 by Joerg Tiedemann

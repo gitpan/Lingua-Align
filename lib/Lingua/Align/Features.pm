@@ -3,10 +3,6 @@ package Lingua::Align::Features;
 use 5.005;
 use strict;
 
-use vars qw($VERSION @ISA);
-@ISA = qw();
-$VERSION = '0.01';
-
 use FileHandle;
 use Lingua::Align::Corpus::Treebank;
 use Lingua::Align::Corpus::Parallel::Giza;
@@ -669,14 +665,14 @@ __END__
 
 =head1 NAME
 
-Lingua::Align::Trees::Features - Perl modules for feature extraction for the Lingua::Align::Trees tree aligner
+Lingua::Align::Features - Feature extraction for tree alignment
 
 =head1 SYNOPSIS
 
-  use Lingua::Align::Trees::Features;
+  use Lingua::Align::Features;
 
   my $FeatString = 'catpos:treespansim:parent_catpos';
-  my $extractor = new Lingua::Align::Trees::Features(
+  my $extractor = new Lingua::Align::Features(
                           -features => $FeatString);
 
   my %features = $extractor->features(\%srctree,\%trgtree,
@@ -685,7 +681,7 @@ Lingua::Align::Trees::Features - Perl modules for feature extraction for the Lin
 
 
   my $FeatString2 = 'giza:gizae2f:gizaf2e:moses';
-  my $extractor2 = new Lingua::Align::Trees::Features(
+  my $extractor2 = new Lingua::Align::Features(
                       -features => $FeatString2,
                       -lexe2f => 'moses/model/lex.0-0.e2f',
                       -lexf2e => 'moses/model/lex.0-0.f2e',
@@ -1042,7 +1038,7 @@ For information on the tree aligner look at L<Lingua::Align::Trees>
 
 =head1 AUTHOR
 
-Joerg Tiedemann, E<lt>jorg.tiedemann@lingfil.uu.seE<gt>
+Joerg Tiedemann
 
 =head1 COPYRIGHT AND LICENSE
 

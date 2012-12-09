@@ -277,7 +277,6 @@ There are several options that can be set. For further information have a look a
   Lingua/Align/Classifier.pm
   Lingua/Align/Classifier/Megam.pm
   Lingua/Align/Classifier/Clues.pm
-  Lingua/Align/Classifier/Diagonal.pm
   Lingua/Align/Classifier/LibSVM.pm
 
 =item modules for alignment inference
