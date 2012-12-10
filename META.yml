@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Lingua-Align
-version:            0.03
+version:            0.04
 abstract:           Perl modules for the alignment of parallel corpora
 author:
     - Joerg Tiedemann

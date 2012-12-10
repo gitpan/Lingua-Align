@@ -5,7 +5,7 @@ use strict;
 
 use vars qw($VERSION @ISA);
 @ISA = qw();
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 sub new{
     my $class=shift;
@@ -183,16 +183,16 @@ Good question. Do whatever you like to do with it. You can use these treebanks t
 
 =head1 SEE ALSO
 
-L<Lingua::treealign> (tree aligner front-end),
-L<Lingua::treealigneval> (tree alignment evaluation script),
-L<Lingua::sta2phrases> (conversion from tree alignments to phrase pairs),
+L<treealign> (tree aligner front-end),
+L<treealigneval> (tree alignment evaluation script),
+L<sta2phrases> (conversion from tree alignments to phrase pairs),
 L<Lingua::Align::Trees> (tree aligner module),
 L<Lingua::Align::Features> (feature extraction module),
 L<Lingua::Align::Corpus> (top-level module for corpus data I/O)
 
 =head1 AUTHOR
 
-Joerg Tiedemann, E<lt>jorg.tiedemann@lingfil.uu.seE<gt>
+Joerg Tiedemann
 
 =head1 COPYRIGHT AND LICENSE
 
